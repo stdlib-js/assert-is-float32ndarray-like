@@ -53,7 +53,9 @@ If no recognized module system is present, access bundle contents via the global
 ```html
 <script type="text/javascript">
 (function () {
+(function () {
     window.isFloat32ndarrayLike;
+})();
 })();
 </script>
 ```
@@ -91,6 +93,7 @@ var bool = isFloat32ndarrayLike( arr );
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-float32ndarray-like@umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
+(function () {
 
 var buffer = new Float32Array( [ 0, 0, 0, 0 ] );
 var arr = ndarray( 'float32', buffer, [ 2, 2 ], [ 2, 1 ], 0, 'row-major' );
@@ -107,6 +110,7 @@ out = isFloat32ndarrayLike( {} );
 out = isFloat32ndarrayLike( null );
 // returns false
 
+})();
 })();
 </script>
 </body>
@@ -201,13 +205,13 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/assert-is-float32ndarray-like/main/LICENSE
 
-[@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray-ctor/tree/umd
+[@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray-ctor/tree/umd/tree/umd
 
 <!-- <related-links> -->
 
-[@stdlib/assert/is-float64ndarray-like]: https://github.com/stdlib-js/assert-is-float64ndarray-like/tree/umd
+[@stdlib/assert/is-float64ndarray-like]: https://github.com/stdlib-js/assert-is-float64ndarray-like/tree/umd/tree/umd
 
-[@stdlib/assert/is-ndarray-like]: https://github.com/stdlib-js/assert-is-ndarray-like/tree/umd
+[@stdlib/assert/is-ndarray-like]: https://github.com/stdlib-js/assert-is-ndarray-like/tree/umd/tree/umd
 
 <!-- </related-links> -->
 
